@@ -3,8 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 
 // Importamos el TabNavigator en lugar de HomeScreen directo
-import TabNavigator from './TabNavigator'; 
-import DetailsScreen from '../screens/DetailsScreen';
+import TabNavigator from './TabNavigator.js'; 
+import DetailsScreen from '../screens/DetailsScreen.js';
 
 const Stack = createNativeStackNavigator();
 

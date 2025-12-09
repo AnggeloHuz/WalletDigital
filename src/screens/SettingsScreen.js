@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import ScreenWrapper from '../components/ScreenWrapper';
+import ScreenWrapper from '../components/ScreenWrapper.js';
 
 const SettingsScreen = () => {
   return (

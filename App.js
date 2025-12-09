@@ -1,6 +1,6 @@
 import React from 'react';
 // Importamos solo el navegador principal
-import AppNavigator from './src/navigation/AppNavigator';
+import AppNavigator from './src/navigation/AppNavigator.js';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 export default function App() {

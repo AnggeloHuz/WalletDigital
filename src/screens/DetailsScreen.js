@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Button, StyleSheet, View } from 'react-native';
-import ScreenWrapper from '../components/ScreenWrapper';
+import ScreenWrapper from '../components/ScreenWrapper.js';
 
 const DetailsScreen = ({ navigation }) => {
   return (

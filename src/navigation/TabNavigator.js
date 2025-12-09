@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons'; // O 'react-native-vector-icons/Ionicons' si usas CLI
 
 // Importamos las pantallas que irán dentro de las pestañas
-import HomeScreen from '../screens/HomeScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+import HomeScreen from '../screens/HomeScreen.js';
+import SettingsScreen from '../screens/SettingsScreen.js';
 
 const Tab = createBottomTabNavigator();
 
