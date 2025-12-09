@@ -1,15 +1,22 @@
 import React from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
+import ScreenWrapper from '../components/ScreenWrapper';
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Esta es la Pantalla de Inicio</Text>
-      <Button
-        title="Ir a Detalles"
-        onPress={() => navigation.navigate('Detalles')}
-      />
-    </View>
+    // Reemplazamos <View> por <ScreenWrapper>
+    <ScreenWrapper>
+      {/* El contenido ahora está seguro y con la barra de estado configurada */}
+
+      {/* Usamos un View interno solo para alinear el contenido de ejemplo */}
+      <View style={styles.innerContainer}>
+        <Text style={styles.text}>Esta es la Pantalla de Inicio</Text>
+        <Button
+          title="Ir a Detalles"
+          onPress={() => navigation.navigate("Detalles")}
+        />
+      </View>
+    </ScreenWrapper>
   );
 };
 

@@ -1,15 +1,20 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { Text, Button, StyleSheet, View } from 'react-native';
+import ScreenWrapper from '../components/ScreenWrapper';
 
 const DetailsScreen = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Aquí están los detalles...</Text>
-      <Button
-        title="Volver atrás"
-        onPress={() => navigation.goBack()}
-      />
-    </View>
+    <ScreenWrapper
+      // 1. Desactivamos translucidez para que el sistema empuje el contenido hacia abajo
+      translucent={false}
+    >
+      <View style={styles.container}>
+        <Text style={styles.text}>
+          ¡Ahora el Header respeta el área segura!
+        </Text>
+        <Button title="Volver atrás" onPress={() => navigation.goBack()} />
+      </View>
+    </ScreenWrapper>
   );
 };
 
@@ -18,11 +23,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#e0e0e0', // Cambié el color para que se note la diferencia
   },
   text: {
     fontSize: 20,
     marginBottom: 20,
+    textAlign: 'center'
   }
 });
 

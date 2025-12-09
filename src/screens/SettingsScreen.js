@@ -1,12 +1,15 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import ScreenWrapper from '../components/ScreenWrapper';
 
 const SettingsScreen = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Pantalla de Configuración</Text>
-      <Text>Aquí irían las opciones de usuario...</Text>
-    </View>
+    <ScreenWrapper>
+      <View style={styles.container}>
+        <Text style={styles.text}>Pantalla de Configuración</Text>
+        <Text>Aquí irían las opciones de usuario...</Text>
+      </View>
+    </ScreenWrapper>
   );
 };
 
